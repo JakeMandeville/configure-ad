@@ -49,5 +49,18 @@ Now that these are both connected, back in the domain controller under Server Ma
   <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/add%20computer%20to%20AD.png"></p>
 </p>
 <p>
-  
+  Now we can have the client side computer be set up to have differnt users sign into the computer, using an admin account you can sign into the client side computer and go to the system settings,. on the about tab select "remote desktop" and select "select users that can remotely access this PC and start adding who can access the computer, here we will add all domain users and all domain admins access to the client-1 computer. 
+  <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/RDP%20access.png"></p>
+  On the domain controller group policy can also be used to adjust multiple computers at once by using additional organizational units for different types of computers that should allow different access.
+</p>
+<p>
+  Now we can begin adding users to the domain using an admin account, you could simply add users one at a time similar to how the Jane Doe account was added, but for this portion a script will be used to generate multiple user accounts, since this lab does not have specific users this script will just randomly generate users from the powershell.
+  <p align="center"><img src="github.com/JakeMandeville/course-pictures/blob/main/AD/create random name users.png"></p>
+  After running this script you can view the Active Directory, all these users were automatically added to the "_EMPLOYEES" group.
+  <p align="center"><img src="github.com/JakeMandeville/course-pictures/blob/main/AD/create random name users.png"></p>
+  NOTE: a script for specific users can also be used, example below will generate users based of a list of names in a text file.
+  <p align="center"><img src="github.com/JakeMandeville/course-pictures/blob/main/AD/create random name users.png"></p>
+  After these accounts have been created they would have an assigned username and can sign into the client side computer under "mydomain.com\(username)". 
+  <br />
+  This lab was designed around just getting the Domain set up and getting users created, the following lab will go over managing the users access more, managing account lockouts, password resets, enabling/disabling accounts and observing the domain and client logs.
 </p>
