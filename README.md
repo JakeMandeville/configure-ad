@@ -48,4 +48,6 @@ Now that these are both connected, back in the domain controller under Server Ma
   Back in the domain controller you can open the Active directory users and computers and confirm that the client side device is now listed under computers
   <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/add%20computer%20to%20AD.png"></p>
 </p>
-
+<p>
+  
+</p>
