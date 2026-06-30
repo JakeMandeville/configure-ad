@@ -55,11 +55,11 @@ Now that these are both connected, back in the domain controller under Server Ma
 </p>
 <p>
   Now we can begin adding users to the domain using an admin account, you could simply add users one at a time similar to how the Jane Doe account was added, but for this portion a script will be used to generate multiple user accounts, since this lab does not have specific users this script will just randomly generate users from the powershell.
-  <p align="center"><img src="github.com/JakeMandeville/course-pictures/blob/main/AD/create random name users.png"></p>
+  <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/create random name users.png"></p>
   After running this script you can view the Active Directory, all these users were automatically added to the "_EMPLOYEES" group.
-  <p align="center"><img src="github.com/JakeMandeville/course-pictures/blob/main/AD/create random name users.png"></p>
+  <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/bulk%20create%20users.png"></p>
   NOTE: a script for specific users can also be used, example below will generate users based of a list of names in a text file.
-  <p align="center"><img src="github.com/JakeMandeville/course-pictures/blob/main/AD/create random name users.png"></p>
+  <p align="center"><img src="[github.com/JakeMandeville/course-pictures/blob/main/AD/create random name users.png](https://github.com/JakeMandeville/course-pictures/blob/main/AD/create%20specific.png)"></p>
   After these accounts have been created they would have an assigned username and can sign into the client side computer under "mydomain.com\(username)". 
   <br />
   This lab was designed around just getting the Domain set up and getting users created, the following lab will go over managing the users access more, managing account lockouts, password resets, enabling/disabling accounts and observing the domain and client logs.
