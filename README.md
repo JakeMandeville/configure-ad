@@ -31,14 +31,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 For an actual Active Directory there will need to be properly configured firewall settings, however for this testing purpose the firewall was turned off, in a real world application this would not be advised. Take the Private IP address of the domain controller and go to the client side virtual machines network settings and set up the DNS servers to point to that domain controller IP address. Opening Client one and running the powershell command should allow you to ping the domain controller, running IPConfig /all should show the DNS settings are pointing to the domain controller IP.
 <br />
 Now that these are both connected, back in the domain controller under Server Manager Select "add roles and features" go through the set up and be sure to select "Active Directory Domain Services" under the server roles, this will be the main thing to check during this install for this purpose. Once active directory is installed domain controller will need to be configured to be used as a domain controller by setting up a new forest. After restarting the domain controller you should finally be able to check "Active Directory Users and computers and begin setting up your AD.
-<p alignment="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/creating%20AD%20in%20windows%20server%20manager.png"></p>
+<p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/creating%20AD%20in%20windows%20server%20manager.png"></p>
 </p>
-<p alignment="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/AD%20running.png"></p>
+<p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/AD%20running.png"></p>
 <p>
   Here you can begin creating new organization units under the forest, in this instance it is simply named "mydomain.com"
-  <p alignment="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/create%20org%20units.png"></p>
+  <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/create%20org%20units.png"></p>
   You can begin creating users under the _ADMINS and _EMPLOYEES groups, these groups will allow both types of users to easily have different types of access within the server.
-  <p alignment="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/Add%20user%20-%20adjust%20groups.png"></p>
+  <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/Add%20user%20-%20adjust%20groups.png"></p>
   This will allow Jane does to log into the Domain controller as jane doe in the "mydomain.com\" domain allow Jane to also have admin capabilities under this domain, she should be capable of adding users as well.
 </p>
 <br />
@@ -46,6 +46,6 @@ Now that these are both connected, back in the domain controller under Server Ma
   At this point start up the client side VM under and under the PC settings "About" page select "Rename this PC (advanced)" select "Change" and set the domain of the device to "mydomain.com".
   <br />
   Back in the domain controller you can open the Active directory users and computers and confirm that the client side device is now listed under computers
-  <p alignment="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/add%20computer%20to%20AD.png"></p>
+  <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/add%20computer%20to%20AD.png"></p>
 </p>
 
