@@ -70,6 +70,6 @@ Now that these are both connected, back in the domain controller under Server Ma
   <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/unlock%20with%20powershell.png"></p>
   If this is being done it may be a good idea to also use AD to reset the users password.
   <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/reset%20password.png"></p>
-  The event logs on the device can be used to view the sign in attmpts as well.
+  The event viewer logs on the device can be used to view the sign in attmpts as well.
   <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/sign%20in%20failures.png"></p>
 </p>
