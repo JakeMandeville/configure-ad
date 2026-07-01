@@ -62,6 +62,7 @@ Now that these are both connected, back in the domain controller under Server Ma
   <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/create%20specific.png"></p>
   After these accounts have been created they would have an assigned username and can sign into the client side computer under "mydomain.com\(username)". 
   <br />
+  <h2>Account management</h2>
   At this point, now that the domain has users its a good idea to set up account lock outs. 
   <p aling="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/adjusting%20group%20policy%20settings.png"></p>
   With this policy set up if someone is trying to access the account enters the wrong password 3 times the account will be locked for a set amount of time unless the account is unlocked by contacting the domain admins. This can be done either through AD by searching up users in AD and opening the account properties, or done through powershell or Command prompt.
@@ -72,4 +73,18 @@ Now that these are both connected, back in the domain controller under Server Ma
   <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/reset%20password.png"></p>
   The event viewer logs on the device can be used to view the sign in attmpts as well.
   <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/AD/sign%20in%20failures.png"></p>
+  <h2>File share permissions</h2>
+  <p>
+    Back in the Domain controller machine navigate to the C: drive, these will each have different access provided to different groups within the domain, the users of different abilities to read the files, read/write access or No access. Go into the properties of each filder, select the sharing option, and then using the share option will allow you to select who has access to these files.
+    <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/File%20Sharing/Adjusting%20group%20access.png"></p>
+    You can also add users to specific groups and give those specific groups access rather than just modifying all users on the domain.
+    <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/File%20Sharing/Add%20user%20to%20group.png"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/File%20Sharing/Adding%20users%20or%20groups%20to%20access.png"></p>
+    This will allow you to block anyone not in the accounting group from being able to access specific folders.
+    <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/File%20Sharing/Block%20non%20accountants.png"></p>
+  </p>
+  <h2>File Sharing within Google Drive</h2>
+  <p>
+    Setting up access for users in a google drive is relatively simple, when you have a document open there should be a button for being able select share options, below will allow specific users to edit the file and then anyone with the link can view the document.
+    <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/File%20Sharing/Specific%20user%20access.png"></p>
+  </p>
 </p>
