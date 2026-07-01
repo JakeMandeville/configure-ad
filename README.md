@@ -84,7 +84,7 @@ Now that these are both connected, back in the domain controller under Server Ma
   </p>
   <h2>File Sharing within Google Drive</h2>
   <p>
-    Setting up access for users in a google drive is relatively simple, when you have a document open there should be a button for being able select share options, below will allow specific users to edit the file and then anyone with the link can view the document.
+    Setting up access for users in a google drive is relatively simple, when you have a document open there should be a button for being able select share options, below will allow specific users to edit the file and then anyone with the link can view the document. This can be a good alternative to sharing files through a network domain if people outside your domain needs access to documents.
     <p align="center"><img src="https://github.com/JakeMandeville/course-pictures/blob/main/File%20Sharing/Specific%20user%20access.png"></p>
   </p>
 </p>
